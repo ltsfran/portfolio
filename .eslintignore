@@ -1,0 +1,5 @@
+public/*
+dist/*
+next-env.d.ts
+node_modules
+vite-env.d.ts

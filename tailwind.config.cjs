@@ -10,8 +10,8 @@ module.exports = {
       },
       keyframes: {
         logoSpin: {
-          'from': { transform: 'rotate(0deg)' },
-          'to': { transform: 'rotate(360deg)' }
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' }
         }
       },
       animation: {
