@@ -24,7 +24,7 @@ function App (): JSX.Element {
             count is {count}
           </button>
           <p className="my-4">
-            Edit <code>src/App.tsx</code> and save to test HMR
+            Edit <code>src/App.tsx</code> and save to test the application
           </p>
         </div>
         <p className="text-[#888888] my-4">
