@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { useFullScreenHeight } from './hooks/useFullScreenHeight'
-import HomePage from './pages/Home'
-import WorksPage from './pages/Works'
+import HomePage from './pages/home'
+import WorksPage from './pages/works'
 
 const router = createBrowserRouter([
   {
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   }
 ])
 
-const App: React.FC = () => {
-  useFullScreenHeight()
-
-  return <RouterProvider router={router} />
-}
+const App: React.FC = () => <RouterProvider router={router} />
 
 export default App
