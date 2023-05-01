@@ -20,7 +20,8 @@
       "@components/*": ["src/components/*"],
       "@hooks": ["src/hooks"],
       "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@contexts/*": ["src/contexts/*"]
     }
   },
   "include": [

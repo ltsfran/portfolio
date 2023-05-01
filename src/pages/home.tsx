@@ -21,14 +21,14 @@ const HomePage: React.FC = () => {
             </div>
           </a>
         </div>
-        <h1 className="text-5xl my-8 font-bold">Vite + React</h1>
+        <h1 className="text-[#181818] dark:text-white text-5xl my-8 font-bold">Vite + React</h1>
         <div className="p-8">
           <button
             onClick={() => { setCount((count) => count + 1) }}
-            className="rounded-lg border-solid border-transparent border py-2 px-5 bg-[#1A1A1A] cursor-pointer transition-all duration-[0.25s] hover:border-[#646CFF]">
+            className="rounded-lg border-solid border-transparent border py-2 px-5 bg-[#626ED4] text-white dark:text-[#181818] cursor-pointer transition-all duration-[0.25s] hover:border-[#646CFF]">
             count is {count}
           </button>
-          <p className="my-4">
+          <p className="my-4 text-[#181818] dark:text-white">
             Edit <code>src/App.tsx</code> and save to test the application
           </p>
         </div>
