@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Layout from '@components/layout'
 import ViteLogo from '../assets/vite.svg'
 import ReactLogo from '../assets/react.svg'
+import Image from '@components/image'
 
 const HomePage: React.FC = () => {
   const [count, setCount] = useState(0)
@@ -22,6 +23,18 @@ const HomePage: React.FC = () => {
           </a>
         </div>
         <h1 className="text-[#181818] dark:text-white text-5xl my-8 font-bold">Vite + React</h1>
+        <div className="w-full flex flex-wrap justify-center">
+          <div className="w-[200px] h-[200px]">
+            <div className="relative pt-[100%] h-0">
+              <Image
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://picsum.photos/200"
+                alt="profile"
+                width={200}
+                height={200} />
+            </div>
+          </div>
+        </div>
         <div className="p-8">
           <button
             onClick={() => { setCount((count) => count + 1) }}
