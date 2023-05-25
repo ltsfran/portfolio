@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Layout from '@components/layout'
 import ViteLogo from '../assets/vite.svg'
 import ReactLogo from '../assets/react.svg'
-import Image from '@components/image'
+import { Image } from '@components/image'
 
 const HomePage: React.FC = () => {
   const [count, setCount] = useState(0)
