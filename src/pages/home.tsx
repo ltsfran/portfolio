@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Layout from '@components/layout'
+import { Helmet } from 'react-helmet'
 import ViteLogo from '../assets/vite.svg'
 import ReactLogo from '../assets/react.svg'
 import { Image } from '@components/image'
@@ -8,7 +8,11 @@ const HomePage: React.FC = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <Layout title="Homepage">
+    <>
+      <Helmet>
+        <title>Homepage | Frontend Developer - Luis Tupa</title>
+        <meta name="title" content="Homepage | Frontend Developer - Luis Tupa" />
+      </Helmet>
       <div className="w-full flex flex-wrap justify-center items-center flex-col text-center">
         <div className="flex justify-center">
           <a href="https://vitejs.dev" target="_blank" rel="noreferrer" className="flex flex-wrap">
@@ -49,7 +53,7 @@ const HomePage: React.FC = () => {
           Click on the Vite and React logos to learn more
         </p>
       </div>
-    </Layout>
+    </>
   )
 }
 
