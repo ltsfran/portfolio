@@ -1,18 +1,22 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomePage from './pages/home'
-import WorksPage from './pages/works'
+import { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from '@components/layout'
+import Loading from '@components/loading'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomePage />
-  },
-  {
-    path: '/works',
-    element: <WorksPage />
-  }
-])
+const HomePage = lazy(async () => await import('./pages/home'))
+const WorksPage = lazy(async () => await import('./pages/works'))
 
-const App: React.FC = () => <RouterProvider router={router} />
+const App: React.FC = () => (
+  <Router>
+    <Layout>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/works" element={<WorksPage />} />
+        </Routes>
+      </Suspense>
+    </Layout>
+  </Router>
+)
 
 export default App
