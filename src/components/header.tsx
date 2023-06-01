@@ -4,6 +4,12 @@ import Logo from '@assets/logo.svg'
 import MenuIcon from '@assets/menu.svg'
 import SunIcon from '@assets/sun.svg'
 import MoonIcon from '@assets/moon.svg'
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem
+} from '@components/menu'
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useThemeContext()
@@ -39,9 +45,39 @@ const Header: React.FC = () => {
             className="text-white dark:text-[#252735] text-2xl box-border p-2 border-none rounded bg-[#626ED4] dark:bg-[#FBD38D]">
             {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
           </button>
-          <button className="text-[#181818] dark:text-white text-2xl p-2 box-border outline-1 outline outline-[#181818] dark:outline-white rounded md:hidden">
-            <MenuIcon />
-          </button>
+          <div className="flex flex-wrap md:hidden">
+            <Menu>
+              <MenuButton>
+                <button className="text-[#181818] dark:text-white text-2xl p-2 box-border outline-1 outline outline-[#181818] dark:outline-white rounded">
+                  <MenuIcon />
+                </button>
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link
+                    to="/"
+                    className="py-2 px-4">
+                    Home
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link
+                    to="/works"
+                    className="py-2 px-4">
+                    Works
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <a
+                    className="py-2 px-4"
+                    href="https://github.com/ltsfran/portfolio"
+                    rel="noreferrer">
+                    View Source
+                  </a>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </div>
         </div>
       </div>
     </header>
