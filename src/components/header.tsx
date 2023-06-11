@@ -56,20 +56,20 @@ const Header: React.FC = () => {
                 <MenuItem>
                   <Link
                     to="/"
-                    className="py-2 px-4">
+                    className="w-full text-start py-2 px-4">
                     Home
                   </Link>
                 </MenuItem>
                 <MenuItem>
                   <Link
                     to="/works"
-                    className="py-2 px-4">
+                    className="w-full text-start py-2 px-4">
                     Works
                   </Link>
                 </MenuItem>
                 <MenuItem>
                   <a
-                    className="py-2 px-4"
+                    className="w-full text-start py-2 px-4"
                     href="https://github.com/ltsfran/portfolio"
                     rel="noreferrer">
                     View Source
