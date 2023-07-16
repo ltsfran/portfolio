@@ -52,7 +52,8 @@ const Header: React.FC = () => {
                   <MenuIcon />
                 </button>
               </MenuButton>
-              <MenuList>
+              <MenuList
+                className="border border-[#E2E8F0] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] dark:border-[#ffffff29] dark:bg-[#2D3748] dark:shadow-[rgba(0,0,0,0.1)_0px_0px_0px_1px,rgba(0,0,0,0.2)_0px_5px_10px,rgba(0,0,0,0.4)_0px_15px_40px]">
                 <MenuItem>
                   <Link
                     to="/"
