@@ -38,9 +38,7 @@ export const MenuListContent = styled.div`
   min-width: 224px;
   padding: 0.25rem 0;
   border-radius: 0.25rem;
-  background-color: #2D3748;
   box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;
   transform-origin: top right;
 
   &.menu-enter {
