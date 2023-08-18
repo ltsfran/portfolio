@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <meta property="og:url" content="https://ltsfran.github.io" />
         </Helmet>
         <Header />
-        <main className="w-full flex-1 flex flex-wrap text-[#181818] dark:text-white">
+        <main className="w-full relative flex-1 flex flex-wrap flex-col text-[#181818] dark:text-white">
           {children}
         </main>
       </div>
