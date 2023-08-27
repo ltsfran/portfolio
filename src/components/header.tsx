@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useThemeContext } from '@hooks'
+import useThemeContext from '@hooks/useThemeContext'
 import Logo from '@assets/logo.svg'
 import MenuIcon from '@assets/menu.svg'
 import SunIcon from '@assets/sun.svg'

@@ -1,4 +1,4 @@
-import { useMenuContext } from './useMenuContext'
+import { useMenuContext } from './menu.hooks'
 
 type MenuButtonProps = React.PropsWithChildren
 

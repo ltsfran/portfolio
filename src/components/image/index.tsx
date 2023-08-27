@@ -1,2 +1,2 @@
-export { default as Image } from './image'
-export type { ImageProps } from './types'
+export { default } from './image'
+export type { ImageProps } from './image.types'

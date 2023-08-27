@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext, type ThemeContextType } from '@contexts/theme'
 
-export const useThemeContext = (): ThemeContextType => {
+const useThemeContext = (): ThemeContextType => {
   const context = useContext(ThemeContext)
 
   if (context === undefined) {
@@ -10,3 +10,5 @@ export const useThemeContext = (): ThemeContextType => {
 
   return context
 }
+
+export default useThemeContext

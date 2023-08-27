@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react'
 import 'intersection-observer'
-import type { ImageProps } from './types'
+import type { ImageProps } from './image.types'
 
 const defaultFallback = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM8+x8AAp8BznoPXvoAAAAASUVORK5CYII='
 

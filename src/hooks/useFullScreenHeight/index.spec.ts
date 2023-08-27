@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react'
-import { useFullScreenHeight } from './'
+import useFullScreenHeight from './'
 
 describe('useFullScreenHeight hook', () => {
   const style = {

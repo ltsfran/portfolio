@@ -1,6 +1,6 @@
 import { CSSTransition } from 'react-transition-group'
-import { useMenuContext } from './useMenuContext'
-import { MenuListWrapper, MenuListContent } from './styled'
+import { useMenuContext } from './menu.hooks'
+import { MenuListWrapper, MenuListContent } from './menu.styled'
 
 interface MenuListOptions {
   className?: string
