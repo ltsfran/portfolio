@@ -1,9 +1,9 @@
 import { fireEvent, render, screen, renderHook, act } from '@testing-library/react'
 import Menu from './menu'
-import MenuButton from './menuButton'
-import MenuList from './menuList'
-import MenuItem from './menuItem'
-import { useMenuContext } from './useMenuContext'
+import MenuButton from './menu-button'
+import MenuList from './menu-list'
+import MenuItem from './menu-item'
+import { useMenuContext } from './menu.hooks'
 
 describe('Menu component', () => {
   it('Menu => render correctly', () => {

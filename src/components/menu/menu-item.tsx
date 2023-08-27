@@ -1,5 +1,5 @@
-import { useMenuContext } from './useMenuContext'
-import { MenuItemContent } from './styled'
+import { useMenuContext } from './menu.hooks'
+import { MenuItemContent } from './menu.styled'
 
 type MenuItemProps = React.PropsWithChildren
 

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet'
-import { useFullScreenHeight } from '@hooks'
+import useFullScreenHeight from '@hooks/useFullScreenHeight'
 import ThemeProvider from '@components/theme'
 import Header from '@components/header'
 

@@ -1,4 +1,4 @@
 export { default as Menu } from './menu'
-export { default as MenuButton } from './menuButton'
-export { default as MenuItem } from './menuItem'
-export { default as MenuList } from './menuList'
+export { default as MenuButton } from './menu-button'
+export { default as MenuItem } from './menu-item'
+export { default as MenuList } from './menu-list'
