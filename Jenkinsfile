@@ -1,17 +1,17 @@
 pipeline {
   agent any
   tools {
-    nodejs '18.15.0'
+    nodejs '18.20.4'
   }
   stages {
     stage('Install') {
       steps {
-        sh 'yarn install'
+        sh 'pnpm install'
       }
     }
     stage('Build') {
       steps {
-        sh 'yarn build'
+        sh 'pnpm run build'
       }
     }
     stage('Ws size') {
@@ -30,6 +30,6 @@ pipeline {
           [pattern: '**/node_modules/**', type: 'EXCLUDE']
         ]
       )
-    }   
+    }
   }
 }
