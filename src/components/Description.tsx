@@ -1,6 +1,6 @@
 const Description: React.FC = () => {
   return (
-    <section className="w-full laptop:mb-24">
+    <section id="description" className="w-full laptop:mb-24">
       <div className="sticky top-0 z-10 -mx-6 mb-4 bg-[#252735]/75 px-6 py-5 backdrop-blur laptop:hidden">
         <h2 className="text-sm font-bold uppercase text-slate-200">About</h2>
       </div>
