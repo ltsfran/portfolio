@@ -6,6 +6,8 @@ pipeline {
   stages {
     stage('Install') {
       steps {
+        sh 'corepack enable'
+        sh 'corepack prepare pnpm@latest --activate'
         sh 'pnpm install'
       }
     }
